@@ -118,6 +118,18 @@
             border-color: #7240fac5;
             padding: 1em;
         }
+
+        div.box04 {
+            background-image: linear-gradient(rgba(75, 7, 163, 0.733), rgba(255, 0, 119, 0.733));
+            width: 325px;
+            padding: 5px;
+            border: 3px;
+            border-style: solid;
+            border-color: #7240fac5;
+            padding: 1em;
+            text-shadow: 2px 2px black;
+            font-family: HanazomeFont
+        }
     </style>
 </head>
 
@@ -149,7 +161,7 @@
             </td>
         </tr>
     </table>
-    <hr color = "CornflowerBlue">
+    <hr color="CornflowerBlue">
     <div class="box01">
         <table cellspacing="20">
             <tr>
@@ -207,7 +219,27 @@
         </table>
     </div>
     <hr color="CornflowerBlue">
+    <form>
+        <div class="box04">
+            <h4> Emulatxx <- us </h4>
+            <label for="pswd">Password: </label>
+            <input type="Emulatus" id="pswd">
+            <input type="button" value="Submit" onclick="checkPswd();" />
+        </div>
+    </form>
 
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "Emulatus";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                window.location = "Emulatus.html";
+            } else {
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
 
 
 
